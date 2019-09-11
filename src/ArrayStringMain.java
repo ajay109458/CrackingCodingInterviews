@@ -9,6 +9,7 @@ public class ArrayStringMain {
 		System.out.println(ArrayString.isUniqueCharWithoutSpace("ajay"));
 		
 		// Q2
+		System.out.println(ArrayString.checkIfPermutation("abc", "cba"));
 	}
 
 }

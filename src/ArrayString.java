@@ -50,5 +50,27 @@ public class ArrayString {
 		
 		return true;
 	}
+	
+	public static boolean checkIfPermutation(String s1, String s2) {
+		
+		int[] setdata = new int[26];
+		
+		for(int i = 0; i < s1.length(); i++) {
+			setdata[s1.charAt(i) - 'a'] ++;
+		}
+		
+		for(int i=0; i < s2.length(); i++) {
+			setdata[s2.charAt(i) -'a']--;
+		}
+		
+		for (int val : setdata) {
+			if (val != 0) {
+				return false;
+			}
+		}
+		
+		return true;
+		
+	}
 
 }
